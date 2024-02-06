@@ -29,7 +29,7 @@ def number_of_words_in_book(book: str)-> int:
 # uses the full text of the book and returns a dictionary
 # with a character and the number of times it appears on the book
 def count_by_alpha_characters_in_book(book: str)-> Dict[str, int]:
-  char_count = {}
+  char_count: dict[str, int] = {}
   for char in book:
     curr_char = char.strip().lower()
     if len(curr_char) > 0 and curr_char.isalpha():
